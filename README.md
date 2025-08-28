@@ -37,7 +37,29 @@ To add our C# Script file to our selected object, click on the C# Script file an
 Stop
 
 ## Program:
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class Rotate : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.RotateAround(Vector3.left, Vector3.up, 40 * Time.deltaTime);
+    }
+}
+
+```
 ## Output:
+<img width="841" height="416" alt="image" src="https://github.com/user-attachments/assets/ce1e6ff1-a727-492f-a037-bc71b57f5b0f" />
 
 ## Result:
+The 3D Rotating Object are Execute Successfully
